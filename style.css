@@ -1,0 +1,259 @@
+@font-face {
+  font-family: Capriola;
+  src: url(fonts/Capriola-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+
+html, body {
+  font-family: 'Quicksand';
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.index {
+  height: 100vh;
+  background-image: url(./images/home.jpg);
+  background-size:cover ;
+  background-repeat: no-repeat;
+background-position: center center;}
+
+.navbar {
+  z-index: 100;
+}
+
+.bg-light {
+  background-color: #C9DCDB !important;
+}
+
+.nav-item .nav-link { 
+  color: black !important;
+}
+
+.booknow {
+  background-color: Yellow !important;
+  border-radius: 0 !important;
+  max-width: 200px;
+  font-family: 'Quicksand';
+  font-weight: 500;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.cabecera {
+  padding-right: 0 !important;
+
+
+}
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.title-slide {
+  text-align: start;
+  font-size: 60px;
+  font-weight: 200;
+}
+
+.carousel-caption {
+  left: 55% !important;
+  bottom: 10rem;
+  right: 0px;
+}
+
+.carousel-caption-center {
+  position: absolute;
+  right: 30%;
+  bottom: 100%;
+  left: 30%;
+  text-align: center;
+}
+
+.title-slide-center {
+  font-size: 60px !important;
+  font-weight: 200;
+  text-align: center !important;
+
+}
+
+
+.carousel-caption-center {
+  color: white;
+  left: 0;
+  bottom: 50%;
+  right: 0px;
+  
+}
+
+.titulo {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.subtitulo {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.texto {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.texto-negro {
+  font-size: 12px;
+  font-weight: 600;
+
+}
+
+.texto-bold {
+  font-family: Capriola;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+.footertext {
+  font-family: Capriola;
+  font-size: 10px !important;
+}
+
+  .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .img-responsive {
+    width: auto;
+    height: 100%;
+}
+
+
+/* IPHONE 5 */
+@media screen and (max-width:320px){
+  .title-slide-center {
+    font-size: 29px !important;
+    margin-bottom: 4rem;
+  }
+
+  .title-slide {
+    font-size: 30px;
+  }
+
+  .carousel-caption {
+    left: 0% !important;
+    bottom: 9rem;
+  }
+
+  .carousel-item {
+    height: 87vh;
+  }
+}
+
+@media screen and (min-device-width: 321px) and (max-device-width:414px){
+  .carousel-caption {
+    left: 0% !important;
+    bottom: 18rem;
+  }
+
+  .title-slide {
+    font-size: 30px;
+  }
+
+  .title-slide-center {
+    font-size: 29px !important;
+    margin-bottom: 10rem;
+    }
+}
+
+
+/* IPAD OR SMALLER */
+
+@media screen and (min-device-width: 415px) and (max-device-width:768px){
+  .title-slide {
+    font-size: 40px !important;
+  }  
+
+  .title-slide-center {
+    text-align: center;
+    font-size: 35px !important;
+    font-weight: 200;
+    margin-bottom: 1rem;
+  }
+
+
+  .carousel-caption {
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .carousel-caption-center {
+    position: absolute;
+    right: 0;
+    bottom: $carousel-caption-spacer;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: $carousel-caption-padding-y;
+    padding-bottom: $carousel-caption-padding-y;
+    color: $carousel-caption-color;
+    text-align: center;
+  }
+
+  .carousel-item {
+    height: 90vh;
+  }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width:1200px){
+    .carousel-caption-center {
+      position: absolute;
+      right: 0;
+      bottom: $carousel-caption-spacer;
+      left: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: $carousel-caption-padding-y;
+      padding-bottom: $carousel-caption-padding-y;
+      color: $carousel-caption-color;
+      text-align: center;
+    }
+    .title-slide-center {
+      text-align: center;
+      font-size: 35px !important;
+      font-weight: 200;
+      margin-bottom: 5rem;
+    }
+    
+}
+
+/* LAPTOP */
+@media screen and (min-width:1200px){
+  .title-slide-center {
+    padding: 0%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }}
+
+  /* LARGER SCREENS */
+  @media screen and (min-width:1441px){
+    .title-slide-center {
+      padding: 15%;
+      padding-left: 20%;
+      padding-right: 20%;
+    }}
